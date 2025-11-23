@@ -57,7 +57,7 @@ int main() {
             do {
                 printf("Enter ID: ");
                 while (scanf("%d", &id) != 1) { // Validate numeric input
-                    printf("Invalid input! ID must be a number. Try again: ");
+                    printf("Invalid input! ID must be a number. \nEnter ID: ");
                     while (getchar() != '\n'); // clear invalid input
                 }
 
@@ -73,7 +73,7 @@ int main() {
             // Input student grade with validation
             printf("Enter Grade: ");
             while (scanf("%f", &grade) != 1) {
-                printf("Invalid input! Grade must be a number: ");
+                printf("Invalid input! Grade must be a number. \nEnter Grade: ");
                 while (getchar() != '\n'); // clear invalid input
             }
 
