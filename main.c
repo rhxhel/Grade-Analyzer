@@ -55,21 +55,6 @@ int main() {
                 }
 
                 // Check for duplicate ID logic must be handled by looking through the list.
-                // Since this part was originally in your addStudent function logic, 
-                // it is slightly inconsistent with the call to addStudent at the end,
-                // but for non-change purposes, I will keep the call structure as is.
-                // *** In the final, clean modular design, the duplicate check should 
-                //     either be fully encapsulated in addStudent or removed here.
-                //     I'll retain your original logic structure in main.c:
-
-                // Temporary logic to check for duplicates (This logic should ideally 
-                // be fully encapsulated or handled by a public function in records.c)
-                // For demonstration, since the head pointer is now private, you cannot do this:
-                // Student *temp = head; // ERROR: head is static in records.c
-                // You would need a new public function, e.g., bool isDuplicateID(int id);
-                // Since you asked for NO changes, I will remove the duplicate check loop
-                // from main.c because it relies on accessing the private 'head' pointer.
-                // The duplicate check inside the records.c addStudent function is retained.
                 
                 // Simplified input gathering for main.c:
                 break; // Exit the removed duplicate check loop
