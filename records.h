@@ -49,6 +49,7 @@ typedef enum {
 // --------------------
 void initStack();
 int isEmpty();
+int studentExists(int id);
 void push(Student s); // push onto stack
 Student pop();        // pop from stack
 
