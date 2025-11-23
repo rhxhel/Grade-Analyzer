@@ -38,7 +38,8 @@ void push(Student s) {
 }
 
 // CASE: Pop a student from the stack
-// ALGORITHM: Array-based stack (LIFO - Last in, First out), (the last student pushed is the first one popped),
+// ALGORITHM: Array-based stack (LIFO - Last in, First out), 
+// (the last student pushed is the first one popped),
 // (restores the most recently deleted student when the user selects “Undo Delete”)
 Student pop() {
     Student empty = {0, "", 0, NULL}; // Default empty student if stack is empty
@@ -108,7 +109,7 @@ void deleteStudent(int id) {
     }
 
     // Print student before deleting
-    printf("\nStudent Deleted:\n");
+    printf("\nStudent Deleted:\n\n");
     printf("%-10s %-20s %-10s\n", "ID", "Name", "Grade");
     printf("----------------------------------------\n");
     printf("%-10d %-20s %-10.2f\n", temp->id, temp->name, temp->grade);
@@ -159,7 +160,7 @@ void undoDelete() {
     head = newS;
 
     // Print restored student
-    printf("Undo successful! Student restored:\n");
+    printf("Undo successful! Student restored:\n\n");
     printf("%-10s %-20s %-10s\n", "ID", "Name", "Grade");
     printf("----------------------------------------\n");
     printf("%-10d %-20s %-10.2f\n", newS->id, newS->name, newS->grade);
