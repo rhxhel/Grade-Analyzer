@@ -24,9 +24,8 @@ typedef struct Student {
 } Student;
 
 // --------------------
-// Stack (Definition needed here since Student struct is used)
+// Stack 
 // --------------------
-// Note: The global Stack instance will be defined and hidden in records.c
 typedef struct Stack {
     Student data[MAX];
     int top;
