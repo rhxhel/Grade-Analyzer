@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
-#include <stdbool.h> // Added for boolean types if needed, though your code uses int for bools
 
 #define MAX 100
 
